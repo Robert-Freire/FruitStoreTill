@@ -36,7 +36,8 @@ namespace Till.APIInterface
                 Console.WriteLine($"\t{item.Fruit.Name}\t\t{item.Quantity}\t\t{item.Fruit.Price}\t\t{item.InvoiceRowAmount}");
             }
             Console.WriteLine($"Total invoice {TillBL.CurrentInvoice.Total}");
-            Console.WriteLine("Thanks for shopping.");
+            Console.WriteLine("Thanks for shopping. Press any key to close the app");
+            Console.ReadKey();
         }
 
         private void ReadInvoiceLine()
